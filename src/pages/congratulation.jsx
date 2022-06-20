@@ -1,12 +1,11 @@
-import NumberContext from "../contexts/numberContext";
 import { useContext } from "react";
-import counterContext from "../contexts/counterContext";
+import NumberContext from '../contexts/numberContext';
 import { useNavigate, Navigate } from "react-router-dom";
 import saw2 from "../asset/saw2.gif";
 
 function Congratulation() {
-  const {numberToGuess} = useContext(NumberContext);
-  const {counter, setCounter} = useContext(counterContext);
+
+  const {counter, setCounter, numberToGuess} = useContext(NumberContext);
   const navigate = useNavigate();
 
 

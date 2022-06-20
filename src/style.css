@@ -19,14 +19,17 @@ li {
   flex-direction: column;
 }
 
- button .enter {
-  display: flex;
-  border-radius: 8px;
+ .enter {
+  font-size: 25px;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: #b10000;
+  color: white;
 
 }
 
 .body {
-  margin-top: 15%;
+  margin-top: 10%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -54,5 +57,24 @@ li {
 }
 
 .startGame {
-  font-size: 18px;
+  font-size: 25px;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: #b10000;
+  color: white;
+}
+
+html {
+  background-color: black;
+}
+
+h1, p {
+  color: red;
+}
+
+.valueCounter input {
+  margin: 30px;
+padding: 10px;
+background-color: #2e1111;
+color: red;
 }

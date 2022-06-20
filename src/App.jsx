@@ -5,7 +5,7 @@ import Congratulation from './pages/congratulation';
 import Play from './pages/play';
 import Home from './pages/home';
 import NumberContext from './contexts/numberContext';
-import counterContext from './contexts/counterContext'
+
 
 export default function App() {
 
@@ -16,14 +16,11 @@ export default function App() {
       value={{
         numberToGuess,
         setNumberToGuess,
-      }}
-    >
-       <counterContext.Provider
-      value={{
         counter,
         setCounter,
       }}
     >
+
 
 
     <Routes>
@@ -32,7 +29,6 @@ export default function App() {
       <Route path="/congratulation" element={<Congratulation />} />
       <Route path="/congratulation" element={<Navigate to="Congratulation" />}/>
     </Routes>
-    </counterContext.Provider>
     </NumberContext.Provider>
 
 

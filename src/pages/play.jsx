@@ -1,6 +1,5 @@
 import { useState, useContext } from "react";
 import NumberContext from "../contexts/numberContext";
-import counterContext from "../contexts/counterContext";
 import { useNavigate, Navigate } from "react-router-dom";
 import saw3 from "../asset/saw3.gif";
 
@@ -10,13 +9,12 @@ function Play() {
 const [stockedNumber, setStockedNumber] = useState();
 const [gameStarting, setGameStarting] = useState(false);
 const [inputValue, setInputValue] = useState();
-//const [counter, setCounter] = useState(0);
 const [message, setMessage] = useState("");
 const navigate = useNavigate();
 
 
-const {numberToGuess} = useContext(NumberContext);
-const {counter, setCounter} = useContext(counterContext);
+const {numberToGuess, counter, setCounter} = useContext(NumberContext);
+
 
 
   const onNumber = (event) => {
