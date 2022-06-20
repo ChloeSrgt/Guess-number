@@ -19,7 +19,7 @@ function Home() {
   return <div className='Game'>  
      <img className='Saw' src={saw} alt="saw" />   
     <h1 className='phrase'>Nous allons jouer à un jeu.</h1>
-    <button onClick={onStartGame}>Start Game</button></div>;
+    <button className="startGame" onClick={onStartGame}>Start Game</button></div>;
 
 }
 
