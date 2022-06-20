@@ -8,7 +8,7 @@ function Congratulation() {
 
 
 
-  return <h1>Vous avez réussi à trouver {numberToGuess} en </h1>;
+  return <h1>Vous avez réussi à trouver {numberToGuess} en {counter} tours</h1>;
 }
 
 export default Congratulation;
