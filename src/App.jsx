@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import './style.css';
 import Congratulation from './pages/congratulation';
 import Play from './pages/play';
@@ -21,6 +21,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/play" element={<Play />} />
       <Route path="/congratulation" element={<Congratulation />} />
+      <Route path="/congratulation" element={<Navigate to="Congratulation" />}/>
     </Routes>
     </NumberContext.Provider>
 
