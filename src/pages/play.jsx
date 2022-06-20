@@ -30,10 +30,6 @@ const {counter, setCounter} = useContext(counterContext);
     setMessage('');
   }
 
-  const onFinish = () => {
-    navigate('/Congratulation');
-  }
-
   const Enter = (e) => {
       if (e.key === "Enter") {
         onOk();
@@ -57,7 +53,7 @@ const {counter, setCounter} = useContext(counterContext);
       value={message}
       onKeyPress={Enter}
       onChange={onNumber} type='number'/>
-    <button className="enter" onClick={onOk, onFinish}>Ok</button>
+    <button className="enter" onClick={onOk}>Ok</button>
     <div className="counter">{counter > 0 ? <p>Vous êtes à {counter} tours</p> : ""}</div>
     </div> 
     </div> 
